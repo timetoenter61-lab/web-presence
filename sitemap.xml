@@ -25,4 +25,10 @@
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://timetoenter61-lab.github.io/web-presence/privacy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
