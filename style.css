@@ -61,10 +61,16 @@ nav a:hover, nav a.active {
 #services {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-    align-items: center;
+    align-items: start;
     gap: 3rem;
     padding: 8rem 5% 6rem;
     max-width: 1400px;
+}
+
+.hero-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 h1 {
