@@ -168,6 +168,85 @@ h2 {
     font-size: 0.95rem;
 }
 
+/* Order / Payment Section */
+#order-info {
+    padding: 5rem 5% 6rem;
+    border-top: 1px solid #334155;
+}
+
+.order-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.order-info h2,
+.order-info h3,
+.order-info h4 {
+    margin-bottom: 0.75rem;
+}
+
+.order-info h2 {
+    color: var(--text-main);
+}
+
+.order-info h3,
+.order-info h4 {
+    color: var(--accent-blue);
+}
+
+.order-info p {
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    color: var(--text-muted);
+}
+
+.payment-stack,
+.connect-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.payment-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    padding: 0.9rem 1.5rem;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.payment-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+.paypal-btn { background: #0070ba; }
+.stripe-btn { background: #635bff; }
+.facebook-btn { background: #1877f2; }
+
+.punter-box {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    padding: 1.75rem 1.5rem;
+    background: rgba(30, 41, 59, 0.9);
+    border: 1px solid #334155;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.punter-box p {
+    margin: 0;
+    max-width: none;
+}
+
 /* Machine Monitoring Roots */
 #monitoring {
     padding: 5rem 5%;
@@ -201,6 +280,7 @@ footer {
 /* Responsive Breakpoint for Mobile Architecture */
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.7rem; }
     header {
         align-items: flex-start;
         flex-direction: column;
@@ -213,6 +293,34 @@ footer {
     }
     .cta-group { flex-direction: column; }
     #services { grid-template-columns: 1fr; }
+    #architecture {
+        padding: 4rem 5% 3rem;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+    .phone-showcase {
+        grid-template-columns: minmax(0, 280px);
+    }
+    .order-inner {
+        text-align: left;
+    }
+    .order-info p {
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .payment-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+    .punter-box {
+        padding: 1.25rem 1rem;
+    }
 }
 
 /* Prices Page (Bootstrap-based) */
@@ -231,6 +339,26 @@ footer {
     border-radius: 8px;
     padding: 2rem;
     max-width: 800px;
+}
+
+.side-hustle-link {
+    display: block;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.side-hustle-link:hover {
+    border-color: var(--accent-blue);
+}
+
+.side-hustle-link:focus-visible {
+    outline: 3px solid var(--accent-blue);
+    outline-offset: 3px;
+}
+
+.side-hustle-url {
+    color: var(--accent-blue);
+    overflow-wrap: anywhere;
 }
 
 .tier-grid {
@@ -373,6 +501,13 @@ footer {
 .device-phone {
     max-width: 280px;
     border-radius: 2rem;
+}
+
+.phone-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 280px));
+    justify-content: center;
+    gap: 2rem;
 }
 
 .global-web-presence {
