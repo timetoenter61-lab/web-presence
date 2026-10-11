@@ -544,4 +544,10 @@ footer {
     aspect-ratio: 16 / 10;
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+    .phone-showcase {
+        grid-template-columns: minmax(0, 280px);
+    }
+}
  
